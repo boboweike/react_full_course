@@ -2,7 +2,7 @@ Welcome back, let's continue to learn the basic usage of React.
 
 First off, we need to install React. You can do this by running the command: `npm i react react-dom`. This command installs two packages. react is the React core, which provides functions for creating elements and components. react-dom handles DOM operations. Simply put, react creates elements, and react-dom brings them onto the page.
 
-Now, let's switch to VSCode to install these two packages. Assuming you have a basic folder structure with a simple HTML page and a package.json file, right-click on the folder and open the integrated terminal. Then type: `npm i react react-dom` to install both packages. After a brief pause, you'll have the packages installed. You can double-check this in your package.json file.
+Now, let's switch to VSCode to install these two packages. Assuming you have a basic folder structure with a simple HTML page and a package.json file, right-click on the folder and open the integrated terminal. [pause] Then type: `npm i react react-dom` to install both packages. After a brief pause, you'll have the packages installed. You can double-check this in your package.json file.
 
 So, we have React installed. But how do we use it? Let's go through the steps together.
 
@@ -18,9 +18,9 @@ Starting with the first step: importing the necessary JavaScript files.[comment/
 
 Next, we'll tackle the second step: creating a React element.[command/pause] We'll use the `React.createElement` method for this. This method requires three parameters.
 
-- The first is the name of the element you want to create, which corresponds to the name of an HTML element.[pause/comment] For example, if you want to create a heading, you can write `h1` here.
+- The first parameter is the name of the element you want to create, which corresponds to the name of an HTML element.[pause/comment] For example, if you want to create a heading, you can write `h1` here.
 - The second parameter is for the attributes of the element.[pause/comment] If you want to add attributes to this element, you can write them here. If there are no attributes, you can simply write `null`. For now, let's keep it simple and go with `null`.
-- The third parameter is the node or child node of the element, which can be a text node or an element node. [pause/comment] To keep it simple, we'll write a text node, say, `Hello React!`.
+- The third parameter is the child node of the element, which can be a text node or an element node. [pause/comment] To keep it simple, we'll write a text node, say, `Hello React!`.
 
 By using this method, we can create a `React` element.
 
@@ -29,20 +29,20 @@ Finally, we'll declare a variable to store the React element we've created. [pau
 Moving on to the third step, we're going to render our React element.[pause/comment] But how do we do that? We'll use the `ReactDOM` object, which conveniently provides us with a `render` method. This method takes two parameters.
 
 - The first one is the React element we want to render.[pause/comment] In our case, it's the title we just created. So, we'll put the title here. [pause]
-- The second parameter is where we want to render our element on the page, also known as the mount point.[pause/comment] Here, we're going to use `document.getElementById` to get a DOM object with an `id` of `root` from our page, [pause] this is a conventional approach to obtain the mount point. But wait, we don't have a `root` element on our page yet, do we? Therefore, we need to manually create an element with an id attribute of `root`. [pause]
+- The second parameter is where we want to render our element on the page, also known as the mount point.[pause/comment] Here, we're going to use `document.getElementById` to get a DOM object with `id root` from our page, [pause] this is a conventional way to get the mount point. But wait, we don't have a `root` element on our page yet, do we? Therefore, we need to manually create an element with an id attribute of `root`. [pause]
 
 At this point, we have completed the three steps of basic usage of React.
 
 Finally, let's open this page to check if our element was successfully created and rendered. [pause] We can see that `Hello React!` is displayed correctly on our webpage. Great!
 
-We can also inspect the element by opening the developer tools. We find that an `h1` element has been created and placed inside the element with `id` of `root`. Look at this `h1` tag, it has a text node but no attributes. This matches the parameters we passed to `React.createElement` earlier: we created an `h1`, with no attributes, and with a text node.
+We can also inspect the element by opening the developer tools. [pause] We find that an `h1` element has been created and placed inside the element with `id root`. Look at this `h1` tag, it has a text node but no attributes. This matches the parameters we passed to `React.createElement` earlier: we created an `h1`, with no attributes, and with a text node.
 
 So, this is the most basic usage of `React`.
 
 Finally, let's summarize the whole process.
 
 - First, you must have `React` to use it, so we need to install the react and react-dom packages through the command line.
-- Next are the usage steps.
+- Next are the three usage steps.
   - The first step is to import the js files, please pay attention to the order of import.
   - The second step is to create a react element. How do we create it? We create it through the `React.createElement` method, please pay attention to case sensitivity.
   - The third step is to render the React element. How do we render it? We use the `ReactDOM.render` method to render the react element we created earlier on the page. That's it.
