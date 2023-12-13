@@ -2,7 +2,7 @@ Welcome back, let's continue to learn the basic usage of React.
 
 First off, we need to install React. You can do this by running the command: `npm i react react-dom`. This command installs two packages. react is the React core, which provides functions for creating elements and components. react-dom handles DOM operations. Simply put, react creates elements, and react-dom brings them onto the page.
 
-Now, let's switch to VSCode to install these two packages. Assuming you have a basic folder structure with a simple HTML page and a package.json file, right-click on the folder and open the integrated terminal. [pause] Then type: `npm i react react-dom` to install both packages. After a brief pause, you'll have the packages installed. You can double-check this in your package.json file.
+Now, let's switch to VSCode to install these two packages. Assuming you have a basic folder structure with a simple HTML page [pause] and a package.json file, [pause] right-click on the folder and open the integrated terminal. [pause] Then type: `npm i react react-dom` [pause] to install both packages. [pause] After a brief pause, you'll have the packages installed. You can double-check this in your package.json file. [pause]
 
 So, we have React installed. But how do we use it? Let's go through the steps together.
 
@@ -24,7 +24,7 @@ Next, we'll tackle the second step: creating a React element.[command/pause] We'
 
 By using this method, we can create a `React` element.
 
-Finally, we'll declare a variable to store the React element we've created. [pause] Now, the second step is done.
+Finally, we'll declare a variable, say `title`, to store the React element we've created. [pause] Now, the second step is done.
 
 Moving on to the third step, we're going to render our React element.[pause/comment] But how do we do that? We'll use the `ReactDOM` object, which conveniently provides us with a `render` method. This method takes two parameters.
 
@@ -35,7 +35,7 @@ At this point, we have completed the three steps of basic usage of React.
 
 Finally, let's open this page to check if our element was successfully created and rendered. [pause] We can see that `Hello React!` is displayed correctly on our webpage. Great!
 
-We can also inspect the element by opening the developer tools. [pause] We find that an `h1` element has been created and placed inside the element with `id root`. Look at this `h1` tag, it has a text node but no attributes. This matches the parameters we passed to `React.createElement` earlier: we created an `h1`, with no attributes, and with a text node.
+We can also inspect the element by opening the developer tools. [pause] We find that an `h1` element has been created and placed inside the element with an `id` of `root`. Look at this `h1` tag, it has a text node but no attributes. This matches the parameters we passed to `React.createElement` earlier: we created an `h1` element, with no attributes, and with a text node.
 
 So, this is the most basic usage of `React`.
 
