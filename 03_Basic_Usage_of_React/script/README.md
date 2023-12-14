@@ -41,7 +41,7 @@ So, this is the most basic usage of `React`.
 
 Finally, let's summarize the whole process.
 
-- First, you must have `React` to use it, so we need to install the react and react-dom packages through the command line.
+- First, you must have `React` installed to use it, so we need to install the react and react-dom packages through the command line.
 - Next are the three usage steps.
   - The first step is to import the js files, please pay attention to the order of import.
   - The second step is to create a react element. How do we create it? We create it through the `React.createElement` method, please pay attention to case sensitivity.

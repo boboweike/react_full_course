@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_Basic_Usage_of_React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- 1. Import js files -->
+    <script src="./node_modules/react/umd/react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+      // 2. Create react element
+      // Return value: an React element
+      // Parameter 1: element name
+      // Parameter 2: element attributes
+      // The 3rd and subsequent parameters: child-nodes of element
+      const title = React.createElement(
+        "p",
+        { title: "i'm a title", id: "p1" },
+        "Hello React!",
+        React.createElement("span", null, "this is a span node")
+      );
+
+      // 3. Render react element
+      // Parameter 1: react element to be rendered
+      // Parameter 2: mount point
+      ReactDOM.render(title, document.getElementById("root"));
+      // React 18
+      // const root = ReactDOM.createRoot(document.getElementById("root"));
+      // root.render(title);
+    </script>
+  </body>
+</html>

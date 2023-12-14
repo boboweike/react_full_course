@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_Basic_Usage_of_React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- 1. Import js files -->
+    <script src="./node_modules/react/umd/react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+      // 2. Create react element
+      // Parameter 1: element name
+      // Parameter 2: element attributes
+      // Parameter 3: child-nodes of element
+      const title = React.createElement("h1", null, "Hello React!");
+
+      // 3. Render react element
+      // Parameter 1: react element to be rendered
+      // Parameter 2: mount point
+      ReactDOM.render(title, document.getElementById("root"));
+    </script>
+  </body>
+</html>
